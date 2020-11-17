@@ -15,9 +15,9 @@ function calculateTotal () {
   let splitAmount = format(totalBill / totalGuest);
 
 // OUT PUT VALLUES //
-  document.getElementById('tip-amount').innerHTML = "Tip amount = $" + tipAmount;
-  document.getElementById('total-amount').innerHTML = "Total bill amount = $" + totalBill;
-  document.getElementById('split-amount').innerHTML = "Per guest amount = $" + splitAmount;
+  document.getElementById('tip-amount').innerHTML = "Tip amount $" + tipAmount;
+  document.getElementById('total-amount').innerHTML = "Total bill amount $" + totalBill;
+  document.getElementById('split-amount').innerHTML = "Per guest amount $" + splitAmount;
 
   console.log(billAmount);
   console.log(percent);
