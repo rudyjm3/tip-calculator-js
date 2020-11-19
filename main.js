@@ -9,8 +9,10 @@ function calculateTotal () {
   let billAmount = document.querySelector('#bill-amount').value;
   let percent = document.querySelector('#tip-percent').value;
   let totalGuest = document.querySelector('#number-of-people').value;
+  // EITHER 2 LINES BELOW TO GET THE PERCENT OF A NUMBER OR VALUE.
   //let tipAmount = (billAmount * (percent / 100));
   let tipAmount = format(billAmount * (percent * .01));
+  // ADD THE "+" INFRONT OF THE VARIABLE NAME TO CONVERT IT TO A STRING SO THAT IT WILL ADD THE NUMBERS AND NOT JUST PUT THE TO VALUES NEXT TO ONE ANOTHER.
   let totalBill = format(+billAmount + +tipAmount);
   let splitAmount = format(totalBill / totalGuest);
 
