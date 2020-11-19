@@ -66,9 +66,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-label {
-  font-family: 'Open Sans', sans-serif;
-}
+
 /* ========== END REMOVE UP/DOWN ARROWS FROM NUMBER INPUTS==== */
 .input-section{
   background-color: #f6f6f6;
@@ -76,8 +74,15 @@ label {
   border: 1px solid #e9e9e9;
   padding: 1rem 0.5rem;
 }
-#bill-amount, #tip-percent, #number-of-people{
+label {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+}
+#bill-amount, #number-of-people{
   padding-left: 15px;
+}
+#tip-percent {
+  margin-left: -14px;
 }
 #bill-amount{
   margin-left: -10px
@@ -87,9 +92,30 @@ label {
   left: 5px;
   top: 6px;
 }
+.percent-sign {
+  position: relative;
+  left: 31px;
+  top: 7px;
+}
+/* ====== OUTPUT SECTION STYLING ============*/
 .output-section{
   /*background-color: #92C7FF;*/
   border-radius: 4px;
   border: 1px solid #e9e9e9;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
+}
+.output-section h3 {
+  margin-bottom: 1.7rem;
+}
+.output-section .tip-amount h3 {
+  display: inline-flex;
+  font-size: 20px;
+}
+.output-section .total-amount h3 {
+  display: inline-flex;
+  font-size: 20px;
+}
+.output-section .split-amount h3 {
+  display: inline-flex;
+  font-size: 20px;
 }
